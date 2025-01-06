@@ -12,7 +12,16 @@ div {
     unicode-bidi: isolate;
 }
 
-.pixiv-base{
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+.pixiv-base {
     height: 200vh;
 
     padding: 0px 72px;
@@ -25,7 +34,6 @@ div {
 
     margin-top: 24px;
     display: flex;
-    padding-bottom: 56px;
 }
 
 .main-contents {
@@ -41,25 +49,31 @@ div {
     line-height: calc(1em + 8px);
 
     margin: 0px;
-    padding: 16px;
+    padding: 0 16px 16px 16px;
     border-radius: 8px;
 }
 
-.illusts-wrapper{
+.illusts-wrapper {
     margin-top: -16px;
     border-radius: 8px 8px 0px 0px;
 }
 
 
-.illusts {
+.illusts-1 {
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.illusts-2 {
     display: block;
     margin: 0px;
     overflow: hidden;
 
-    margin-bottom: 20px;
+    padding-top: 40px;
 }
 
-.illust-a{
+.illust-a {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -72,7 +86,7 @@ div {
     cursor: zoom-in;
 }
 
-.illust-image{
+.illust-image {
     display: block;
     width: auto;
     height: auto;
